@@ -46,6 +46,7 @@ static GLSReadingList *sharedReadingList;
 			GLSReadingListItem *unreadItem = [[GLSReadingListItem alloc] init];
 			unreadItem.title = bookmark[@"URIDictionary"][@"title"];
 			unreadItem.URL = [NSURL URLWithString:bookmark[@"URLString"]];
+			unreadItem.UUID = bookmark[@"WebBookmarkUUID"];
 			[unreadItems addObject:unreadItem];
 		}
 	}

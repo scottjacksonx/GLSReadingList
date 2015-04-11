@@ -12,5 +12,6 @@
 
 @property NSString *title;
 @property NSURL *URL;
+@property NSString *UUID;
 
 @end
